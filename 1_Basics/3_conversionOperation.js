@@ -1,3 +1,4 @@
+// --------------------------------------------Conversions------------------------------------------------------
 let score="33a"
 
 console.log(typeof score)
@@ -68,3 +69,26 @@ let numToString=String(num)
 console.log(typeof numToString)
 console.log(numToString)
 
+// --------------------------------------------Operations------------------------------------------------------
+console.log("================================Operations============================")
+let value=3
+let negValue=-value
+console.log(negValue)
+
+let str1="hello"
+let str2=" nakshatra"
+let str3=str1+str2
+console.log(str3)
+
+console.log("1"+2)
+console.log(1+"2")
+console.log("1"+"2")
+console.log("1"+2+2)
+console.log(1+2+"2")
+console.log(1+"2"+2)
+//if string first then everything in string
+//if number first then calcu then convert
+
+console.log(+true) //1
+// console.log(true+) //error
+console.log(+"") //0 as "" gives 0 in conversion
