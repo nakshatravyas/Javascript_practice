@@ -17,6 +17,7 @@ console.log(hundereds.toLocaleString('en-in'))//will add commas in the number fo
 
 // ===============================Math====================================
 console.log("===============================Math====================================")
+
 console.log(Math)
 console.log(Math.abs(-4))
 console.log(Math.round(4.6))

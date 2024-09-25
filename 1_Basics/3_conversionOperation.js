@@ -44,6 +44,7 @@ console.log(valueInbol)
 //null -> 0
 
 console.log("---------------------------Number to Boolean---------------------------------")
+
 let isLoggedIn=1
 let boolValue=Boolean(isLoggedIn)
 console.log(boolValue)
@@ -62,6 +63,7 @@ console.log(boolValue2)
 //"hjdhjs"->true
 
 console.log("---------------------------Number to String---------------------------------")
+
 let num=33
 console.log(typeof num)
 //string to number
@@ -71,6 +73,7 @@ console.log(numToString)
 
 // --------------------------------------------Operations------------------------------------------------------
 console.log("================================Operations============================")
+
 let value=3
 let negValue=-value
 console.log(negValue)
