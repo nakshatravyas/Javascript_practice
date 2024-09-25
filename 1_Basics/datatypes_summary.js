@@ -38,3 +38,25 @@ const myFun=function()
 console.log(typeof heros)
 
 //doc - https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//===========================================Memories===================================
+//Stack (for primitive), Heap (for non primitive)
+
+//stack memory and by copy so changes in copy
+let myName="nakshatra"
+let anotherName=myName
+anotherName="Vyas"
+
+console.log(myName)
+console.log(anotherName)
+
+//heap memory and reference so changes in direct original
+let user1={
+    email:"abc@gmail.com",
+    age:45
+}
+let user2=user1
+user2.email="cba@gmail.com"
+
+console.log(user1.email)
+console.log(user2.email)
