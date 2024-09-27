@@ -1,5 +1,5 @@
 let myDate=new Date()
-console.log(typeof myDate) //* it is a object
+console.log(typeof myDate) //⭐ it is a object
 console.log(myDate)
 console.log(myDate.toString())
 console.log(myDate.toDateString())
@@ -27,7 +27,7 @@ console.log("=========================Timestamps=============================")
 let ts=Date.now()
 console.log(ts) //value in ms
 console.log(myCreatedDate.getTime()) //value in ms
-console.log(Math.floor(Date.now()/1000)) //* convert in seconds
+console.log(Math.floor(Date.now()/1000)) //⭐ convert in seconds
 
 // ===============================Destructuring date=====================================
 console.log("=========================Destructuring date=============================")

@@ -1,10 +1,10 @@
-// "use strict"; treat all js code as newer version
+//⭐ "use strict"; treat all js code as newer version
 
 let name="nakshatra"
 let age=19
 let isLoggedIn=false
 
-//number =>2^53
+//⭐number =>2^53
 //bigint
 //string =>" "
 //boolean =>true/false
