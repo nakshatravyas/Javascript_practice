@@ -9,7 +9,7 @@ const arr2=new Array(1,2,3,4)
 console.log(arr2[0])
 
 //=======================Methods=============================
-
+console.log("=========methods============")
 arr2.push(6)
 console.log(arr2)
 
