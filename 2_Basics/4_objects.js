@@ -9,7 +9,7 @@ tinderUser.isLoggedIn=false
 
 // console.log(tinderUser)
 
-//object nesting
+//================object nesting==================
 const regularUser={
     email:"abc@gmail.com",
     fullname:{
@@ -21,7 +21,7 @@ const regularUser={
 }
 // console.log(regularUser.fullname.userfullname.firstname)
 
-//combining object
+//==============combining object=====================
 const obj1={1:"a",2:"b"}
 const obj2={3:"c",4:"d"}
 
@@ -29,8 +29,24 @@ const obj2={3:"c",4:"d"}
 /*2*/ const obj3={...obj1,...obj2} //spread operator
 console.log(obj3)
 
-//other methods for objects
+//==============other methods for objects=====================
 console.log(tinderUser)
 console.log(Object.keys(tinderUser)) //returns all keys in the form of a array
 console.log(Object.entries(tinderUser)) 
 console.log(tinderUser.hasOwnProperty('isLogged')) //availability of particular properly
+
+//=================destructuring object====================
+const course={
+    coursename:"javascript hindi",
+    price:"999",
+    courseTeacher:"nakshu"
+}
+
+//i dont want to write "course.courseTeacher" multiple times so ⬇️ 
+const {courseTeacher}=course
+console.log(courseTeacher)
+
+//i want to call courseTeacher only teacher then
+const {courseTeacher:teacher}=course
+console.log(teacher)
+
