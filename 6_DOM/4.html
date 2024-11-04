@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li>javascripts</li>
+    </ul>
+</body>
+<script>
+    //adding a element
+
+    function addli(langName)
+    {
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`
+        const parentul=document.querySelector('.language')
+        parentul.appendChild(li)
+    }
+    addli('python')
+    addli('ruby')
+    //here we have to traverse whole DOM tree
+
+    function addlioptimise(langName)
+    {
+        const li=document.createElement('li')
+        const addText=document.createTextNode(langName)
+        li.appendChild(addText)
+        const parentul=document.querySelector('.language')
+        parentul.appendChild(li)
+    }
+    addlioptimise('typescript')
+    //here we dont have to traverse whole DOM tree
+
+
+    // edit a element (many ways)
+
+    const secondLang=document.querySelector('li:nth-child(2)')
+    //1) secondLang.innerHTML="Mojo"    not optimised
+    
+    //2)for optimised we will make a new element then replace with older
+    const newli=document.createElement('li')
+    newli.textContent="Mojo"
+    secondLang.replaceWith(newli)
+
+    //3)
+    const firstLang=document.querySelector('li:first-child')
+    firstLang.outerHTML='<li>Balle balle</li>'
+
+    //remove element
+    const lastlang=document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+</html>
