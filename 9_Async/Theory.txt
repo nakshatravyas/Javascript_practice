@@ -1,0 +1,12 @@
+<!-- Default Javascript -->
+-> Synchronous
+-> Single threaded
+-> Now if single threaded then is it slow? if we use only js engine then it might feels slow but nowadays js engine alone is not avail it avail in runtime env which is browser or nodejs so it doen not feel slow
+
+<!-- Execution Context -->
+->execute one line at a time
+->each operation waits for the last one to combine before executing
+
+Blocking code                vs             Non blocking code
+->block the flow of program         ->does not block execution      
+->read file sync                    ->read file async  
